@@ -125,7 +125,7 @@ return array (
     'Magento_Wishlist' => 1,
     'Magento_WishlistSampleData' => 1,
     'Training_Render' => 1,
-    'Training_Test' => 1,
-    'Training_Test2' => 1,
+    'Training_Test' => 0,
+    'Training_Test2' => 0,
   ),
 );

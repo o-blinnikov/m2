@@ -3,7 +3,7 @@
       xsi:noNamespaceSchemaLocation="../../../../../../../../htdocs/lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content.top">
-            <block class="Magento\Framework\View\Element\Template"
+            <block class="Training\Render\Block\Path"
                    name="training.example.first"
                    template="Training_Render::first.phtml">
                 <arguments>
