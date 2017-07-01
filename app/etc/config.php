@@ -124,8 +124,12 @@ return array (
     'Magento_WidgetSampleData' => 1,
     'Magento_Wishlist' => 1,
     'Magento_WishlistSampleData' => 1,
+    'Training_EavBackend' => 0,
+    'Training_FreeShippingBanner' => 1,
     'Training_Render' => 1,
     'Training_Test' => 0,
     'Training_Test2' => 0,
+    'Unit4_LogProductSave' => 0,
+    'Unit4_RootCategory' => 0,
   ),
 );

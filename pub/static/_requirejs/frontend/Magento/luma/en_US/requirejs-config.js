@@ -459,7 +459,16 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            transparent:            'Magento_Payment/transparent'
+            orderReview:            'Magento_Paypal/order-review',
+            paypalCheckout:         'Magento_Paypal/js/paypal-checkout'
+        }
+    },
+    paths: {
+        paypalInContextExpressCheckout: 'https://www.paypalobjects.com/api/checkout'
+    },
+    shim: {
+        paypalInContextExpressCheckout: {
+            exports: 'paypal'
         }
     }
 };
@@ -475,16 +484,7 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            orderReview:            'Magento_Paypal/order-review',
-            paypalCheckout:         'Magento_Paypal/js/paypal-checkout'
-        }
-    },
-    paths: {
-        paypalInContextExpressCheckout: 'https://www.paypalobjects.com/api/checkout'
-    },
-    shim: {
-        paypalInContextExpressCheckout: {
-            exports: 'paypal'
+            transparent:            'Magento_Payment/transparent'
         }
     }
 };
@@ -608,6 +608,16 @@ var config = {
     }
 };
 
+require.config(config);
+})();
+(function() {
+var config = {
+    map: {
+        '*' : {
+            'fullActionName' : 'Training_Render/js/fullactionname'
+        }
+    }
+};
 require.config(config);
 })();
 

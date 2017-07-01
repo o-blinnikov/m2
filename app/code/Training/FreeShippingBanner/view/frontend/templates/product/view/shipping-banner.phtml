@@ -1,0 +1,13 @@
+<?php /** @var Magento\Framework\View\TemplateEngine\Php $this */ ?>
+<div>
+    <div class="shipping-banner" style="background-color: <?php echo $this->getData('background_color') ?>;
+        margin: 10px;
+        padding: 30px;
+        border: #d3d3d3 2px dotted;
+        border-radius: 20px;
+        text-align: center;
+        ">
+        <?php echo $block->getFreeShippingSubtotal(); ?>
+        <h2><?php echo __('You need to add <strong>%s</strong> more to your cart, to gain free shipping') ?></h2>
+    </div>
+</div>
