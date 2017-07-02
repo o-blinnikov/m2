@@ -1,0 +1,13 @@
+<?php /** @var Magento\Framework\View\TemplateEngine\Php $this */ ?>
+<?php foreach ($websites = $block->getWebsites() as $website): ?>
+    <li class="level0 level-top ui-menu-item"
+        <?php if ($block->resolveCurrentWebsiteId() == $website->getWebsiteId()): ?>
+            style="background: <?php echo $this->getData('background_color') ?>;"
+        <?php endif; ?>>
+        <a href="<?php echo $block->getUrl('stores/store/switch',['_scope' => 'de_fr', '_scope_to_url' => true]) ?>" class="level-top ui-corner-all">
+            <span>
+                <?php echo $website->getName(); ?>
+            </span>
+        </a>
+    </li>
+<?php endforeach; ?>
