@@ -8,9 +8,9 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="product.info.addtocart.additional">
-            <action method="setTemplate">
-                <argument name="template" xsi:type="string">Training_FreeShippingBanner::product/view/addtocart.phtml</argument>
-            </action>
+            <!--<action method="setTemplate">-->
+                <!--<argument name="template" xsi:type="string">Training_FreeShippingBanner::product/view/addtocart.phtml</argument>-->
+            <!--</action>-->
             <block class="Training\FreeShippingBanner\Block\ShippingBanner"
                    name="product.view.shipping.banner"
                    template="Training_FreeShippingBanner::product/view/shipping-banner.phtml">

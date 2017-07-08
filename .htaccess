@@ -118,3 +118,10 @@ ErrorDocument 403 /pub/errors/404.php
         Header unset X-UA-Compatible
     </FilesMatch>
 </IfModule>
+
+SetEnvIf Host .*dev.m2.loc.* MAGE_RUN_CODE=base
+SetEnvIf Host .*dev.m2.loc.* MAGE_RUN_TYPE=website
+SetEnvIf Host .*dev.m2.de.* MAGE_RUN_CODE=de
+SetEnvIf Host .*dev.m2.de.* MAGE_RUN_TYPE=website
+SetEnvIf Host .*dev.m2.fr.* MAGE_RUN_CODE=fr
+SetEnvIf Host .*dev.m2.fr.* MAGE_RUN_TYPE=website

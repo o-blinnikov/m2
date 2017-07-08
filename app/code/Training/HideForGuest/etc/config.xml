@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--
+  ~  This file is part of the Cancel Order Email extension by Web Whales
+  ~
+  ~   @category    WebWhales
+  ~   @package     WebWhales_CancelOrderEmail
+  ~   @copyright   Copyright (c) 2016 Web Whales (https://webwhales.nl/)
+  ~   @license     https://webwhales.nl/WW-MGT-EULA-LICENSE.txt
+  ~
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+  <default>
+    <guest_customer>
+      <general>
+        <enabled>1</enabled>
+      </general>
+    </guest_customer>
+  </default>
+</config>
